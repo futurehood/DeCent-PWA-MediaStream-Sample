@@ -2,7 +2,7 @@
 
 
 <a href="">
-    <img style="float: right; width: 30%; margin: 0 0 2em 2em;" src="assets/mediastream-sample-screenshot.png">
+    <img style="float: right; width: 30%; margin: 0 0 2em 2em;" src=".\mediastream-sample-screenshot.png">
 </a>
 
 This repository is intended to serve as an example of how a WebRTC peer connection with a single MediaStream can be obtained using a DeCent-Core signaling server and the ```DCNT``` decentralized peer-to-peer RTC signaling protocol.
