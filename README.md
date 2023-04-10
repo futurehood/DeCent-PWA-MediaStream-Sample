@@ -1,7 +1,7 @@
 # Welcome - DeCent PWA MediaStream Sample #
 
 
-<a href=".\mediastream-sample-screenshot.png">
+<a align="right" href=".\mediastream-sample-screenshot.png">
     <img style="float: right; width: 30%; margin: 0 0 2em 2em;" src=".\mediastream-sample-screenshot.png">
 </a>
 
