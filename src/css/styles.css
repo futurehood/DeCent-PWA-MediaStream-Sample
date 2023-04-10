@@ -1,0 +1,174 @@
+@font-face {
+    font-family: "JobClarendon";
+    src: url("/fonts/Rubik-VariableFont_wght.ttf") format("ttf supports variations"),
+    url("/fonts/Rubik-VariableFont_wght.ttf") format("ttf-variations");
+    font-weight: 100 1000;
+}
+body {
+    font-family: "Rubik Light";
+    margin: 0;
+    padding: 1em;
+}
+h2 {
+    margin: .5em 0 1em;
+    font-weight: 400;
+}
+button {
+    display: block;
+    box-sizing: border-box;
+    float: right;
+}
+form {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    color: #333;
+}
+form>video{
+    display: block;
+    box-sizing: border-box;
+    float: left;
+    width: 50%;
+    margin: 0;
+    padding: 1em;
+    border: 1px solid #333;
+}
+fieldset {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: .5em;
+    padding: .5em 1em 1em;
+}
+fieldset:first-of-type>label>span {
+    display: block;
+    box-sizing: content-box;
+    float: left;
+    width: 45%;
+}
+fieldset:first-of-type>label>input,
+fieldset:first-of-type>label>select {
+    display: block;
+    box-sizing: content-box;
+    float: right;
+}
+fieldset:first-of-type>label>input:not([type=number]) {
+    width: 50%;
+}
+fieldset:first-of-type>label {
+    display: block;
+    box-sizing: border-box;
+    padding: .5em 0;
+    margin-bottom: 1em;
+}
+ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+button[disabled] {
+    background: purple;
+    display: none;
+}
+#connectionStatusList>li>label {
+    font-family: monospace;
+}
+progress {
+    width: 100%;
+}
+#messagesList {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+#messagesList > li {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+}
+#messagesList > li > input[type=checkbox] {
+    display: block;
+    width: 1em;
+    height: 1em;
+    float: left;
+    margin: 0 1em 1em 0;
+}
+#messagesList > li > time, 
+#messagesList > li > span {
+    overflow: hidden;
+}
+
+details>summary{
+    font-family: monospace;
+    cursor: pointer;
+}
+form:nth-of-type(2)>fieldset>ul>li>details>summary {
+    border-bottom: .1em solid #b7b7b7;
+}
+details {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+details>p {
+    display: block;
+    overflow-x: auto;
+    box-sizing: border-box;
+    width: 85vw;
+    margin: 0;
+    padding: .5em 3em .5em 1em;
+    font-size: .9em;
+}
+summary {
+    display: block;
+    box-sizing: border-box;
+    padding: 1em 0;
+}
+details:not([open])>summary:after {
+    content: "▼";
+    float: right;
+}
+details[open]>summary:after {
+    content: "▲";
+    float: right;
+}
+summary>samp {
+    margin-bottom: 5em;
+    margin-left: .25em;
+    color: rgb(191, 53, 255);
+}
+summary>input {
+    position: absolute;
+    right: 3.5em;
+}
+details>label {
+    display: block;
+    overflow: auto;
+    margin-bottom: 1em;
+}
+details>label>textarea {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 1em 0;
+}
+legend>span{
+    font-weight: 500;
+    font-style: italic;
+}
+dialog {
+    position: static;
+    overflow: auto;
+    margin: 0 0 1em;
+    padding: 1.5em;
+    border: none;
+    color: #fff;
+    line-height: 1.5em;
+}
+dialog.error {
+    background: #ff0044;
+}
