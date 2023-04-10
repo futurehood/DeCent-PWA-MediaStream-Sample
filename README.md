@@ -45,3 +45,5 @@ The order in which connections are made is important here. This is because in re
 1. Connect to the signaling server for the local connection first.
 2. Connect to the signaling server for the remote connection second.
 3. Initiate a peer connection by sending a signal from the remote connection to the local connection third.
+
+<br><br>
