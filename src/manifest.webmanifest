@@ -1,0 +1,16 @@
+{
+    "$schema": "https://json.schemastore.org/web-manifest-combined.json",
+    "name": "DeCent PWA MediaStream Sample",
+    "short_name": "DeCent PWA MediaStream Sample",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#fff",
+    "description": "Use this example application to quickly get started building your own decentralized web applications with DeCent.",
+    "icons": [
+        {
+            "src": "images/logo.svg",
+            "sizes": "600x600",
+            "type": "image/png"
+        }
+    ]
+  }
