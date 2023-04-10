@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DeCent PWA Sample</title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link href="css/styles.css" rel="stylesheet" />
+    <script type="module" src="js/init.js" defer></script>
+</head>
+<body>
+    <h2>
+        <span>Remote Connection</span>
+        <button id="connectSignalingServer" type="button">
+            <span>Connect Signaling Server</span>
+        </button>
+        <button id="connectPeer" type="button" disabled>
+            <span>Connect Peer</span>
+        </button>
+    </h2>
+    <form name="media">
+        <template>
+            <video></video>
+        </template>
+    </form>
+    <ul id="dialogsList">
+        <template id="badCertificate">
+            <li>
+                <dialog class="error" open>
+                    <span>The certificate of the signaling server is not trusted by the browser. If the identity of the address is trusted, the certificate can be accepted here: </span>
+                    <a target="_blank" href=""></a>
+                    <form method="dialog">
+                        <button formmethod="dialog">Close</button>
+                    </form>
+                </dialog>
+            </li>
+        </template>
+    </ul>
+    <form name="configuration">
+        <fieldset>
+            <legend>
+                <span>Configuration</span>
+            </legend>
+            <label>
+                <span>STUN server</span>
+                <input name="stun_server" type="url" value="iphone-stun.strato-iphone.de:3478">
+            </label>
+            <label>
+                <span>Application protocol</span>
+                <input name="application_protocol" type="text" value="DEMO_PROTOCOL">
+            </label>
+            <label>
+                <span>Remote connection identifier</span>
+                <input name="connection_id" type="text" value="remote-connection">
+            </label>
+            <label>
+                <span>Remote WSS reachable address</span>
+                <input name="address" type="url" value="" autocomplete>
+            </label>
+            <label>
+                <span>Remote WSS port</span>
+                <input name="port" type="number" value="" autocomplete>
+            </label>
+            <label>
+                <span>Local media source</span>
+                <select name="media_source">
+                    <option selected>Webcam/Microphone</option>
+                    <option>Screen Capture</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <span>Status</span>
+            </legend>
+            <ul id="connectionStatusList">
+                <template>
+                    <li>
+                        <label>
+                            <span></span>
+                            <span>Disconnected</span>
+                            <button type="button">
+                                <span>&times;</span>
+                            </button>
+                            <progress value="0"></progress>
+                        </label>
+                    </li>
+                </template>
+            </ul>
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>
+                <span>Messages</span>
+            </legend>
+            <ul id="messagesList">
+                <template>
+                    <li>
+                        <details open>
+                            <summary>
+                                <span></span>
+                                <input type="checkbox" checked>
+                            </summary>
+                            <ul>
+                                <template>
+                                    <li>
+                                        <details open>
+                                            <summary>
+                                                <samp></samp>
+                                                <time></time>
+                                            </summary>
+                                            <p></p>
+                                        </details>
+                                    </li>
+                                </template>
+                            </ul>
+                        </details>
+                    </li>
+                </template>
+                <template>
+                    <label>
+                        <textarea rows="3"></textarea>
+                        <button type="button">
+                            <span>Send</span>
+                        </button>
+                    </label>
+                </template>
+            </ul>
+        </fieldset>
+    </form>
+</body>
+</html>
