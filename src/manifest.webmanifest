@@ -8,7 +8,7 @@
     "description": "Use this example application to quickly get started building your own decentralized web applications with DeCent.",
     "icons": [
         {
-            "src": "images/logo_circle.svg",
+            "src": "/images/logo_circle.svg",
             "sizes": "600x600",
             "type": "image/png"
         }
