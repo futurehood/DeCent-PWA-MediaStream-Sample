@@ -10,7 +10,7 @@
         {
             "src": "/images/logo_circle.svg",
             "sizes": "600x600",
-            "type": "image/png"
+            "type": "image/svg+xml"
         }
     ]
   }
